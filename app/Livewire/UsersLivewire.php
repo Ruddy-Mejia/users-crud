@@ -13,6 +13,12 @@ class UsersLivewire extends Component
 
     public $search = '', $cards = true;
 
+    protected $listeners = ['refreshUsers'];
+
+    public function refreshUsers()
+    {
+        $this->resetPage();
+    }
 
     public function toogleView(){
         $this->cards = !$this->cards;

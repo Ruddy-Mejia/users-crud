@@ -1,0 +1,6 @@
+Siguientes tareas
+
+solucionar toastr delete
+modificar color botones de accion lista de usuarios
+solucionar error The GET method is not supported for route livewire/update. Supported methods: POST.
+agregar funcion editar usuario

@@ -18,6 +18,7 @@ class UsersDelete extends Component
     public function deleteUser()
     {
         User::find($this->userId)->delete();
+        $this->emit('refreshUsers');
         $this->toastMessage = 'Se eliminó correctamente';
         $this->closeModal();
     }
