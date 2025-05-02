@@ -21,9 +21,10 @@ class UserFactory extends Factory
             'role_id' => 2,
             'email' => fake()->unique()->safeEmail(),
             'password' => static::$password ??= Hash::make('password'),
-            'address' => fake()->address(),
+            'address' => $this->faker->streetAddress,
             'gender' => fake()->randomElement(['male', 'female']),
-            'status'=> 1
+            'status'=> 1,
+            'phone'=> $this->faker->phoneNumber,
         ];
     }
 }

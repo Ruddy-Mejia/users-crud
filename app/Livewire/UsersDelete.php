@@ -7,31 +7,9 @@ use Livewire\Component;
 
 class UsersDelete extends Component
 {
-    public $userId, $isModalOpen = false;
     public $toastMessage = '';
 
-    public function mount($userId)
-    {
-        $this->userId = $userId;
-    }
-
-    public function deleteUser()
-    {
-        User::find($this->userId)->delete();
-        $this->emit('refreshUsers');
-        $this->toastMessage = 'Se eliminó correctamente';
-        $this->closeModal();
-    }
-
-    public function openModal()
-    {
-        $this->isModalOpen = true;
-    }
-
-    public function closeModal()
-    {
-        $this->isModalOpen = false;
-    }
+    public function mount(){}
 
     public function render()
     {

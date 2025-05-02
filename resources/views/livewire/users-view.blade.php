@@ -1,6 +1,6 @@
 <div>
     <button wire:click="getUser"
-        class=" flex text-black dark:text-white hover:bg-indigo-950 bg-indigo-600 w-16 h-8 justify-center items-center rounded-md">
+        class=" flex text-slate-50 hover:bg-indigo-950 bg-indigo-600 w-16 h-8 justify-center items-center rounded-md">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
             <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
             <path fill-rule="evenodd"
@@ -48,7 +48,6 @@
 
                     <!-- Botón Cerrar -->
                     <div class="mt-6 flex justify-end">
-                        {{-- <button wire:click="$emit('closeModal')" --}}
                         <button wire:click="closeModal"
                             class="px-4 py-2 text-sm font-medium text-gray-600 bg-gray-200 hover:bg-gray-300 rounded-md dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">
                             Cerrar
