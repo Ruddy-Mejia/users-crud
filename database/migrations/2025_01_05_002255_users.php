@@ -23,7 +23,7 @@ return new class extends Migration {
             $table->string('photo_path')->nullable();
             $table->string('signature_path')->nullable();
             $table->enum('gender', ['male', 'female']);
-            $table->integer('phone')->nullable();
+            $table->string('phone')->nullable();
             $table->boolean('status')->default(false);
             $table->timestamps();
         });

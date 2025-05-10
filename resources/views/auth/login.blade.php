@@ -31,4 +31,15 @@
             </x-primary-button>
         </div>
     </form>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const theme = localStorage.getItem("theme");
+            if (theme === "dark") {
+                document.documentElement.classList.add("dark");
+            } else {
+                document.documentElement.classList.remove("dark");
+            }
+        });
+    </script>
+
 </x-login-layout>
