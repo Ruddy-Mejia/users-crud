@@ -190,7 +190,6 @@
                                         <div class="shrink-0">
                                             <img id="preview_img" class="h-16 w-16 object-cover rounded-md"
                                                 src="{{ $photo_path ? $photo_path : 'https://avatar.iran.liara.run/public/boy?username=Ash' }}" />
-                                            <!-- src="{{ $photo_path ? $photo_path->temporaryUrl() : 'https://avatar.iran.liara.run/public/boy?username=Ash' }}" /> -->
                                         </div>
                                         <label class="block">
                                             <span class="sr-only">Choose profile photo</span>

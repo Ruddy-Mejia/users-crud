@@ -141,7 +141,6 @@ class UsersLivewire extends Component
             ->orderBy('status', 'asc')
             ->paginate(10, ['*'], $pageName)
             ->withQueryString();
-        // dd($users);
         return view('livewire.users-livewire', [
             'users' => $users,
         ])->layout('layouts.app');

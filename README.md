@@ -10,7 +10,14 @@ Ejecutar los siguientes comandos para realizar la instación de las librerias re
 ```sh
 composer install
 npm install
+```
+Copiar y renombrar el archivo .env
+
+.env.example => .env
+
+```sh
 php artisan key:generate
+php artisan storage:link
 ```
 Ejecutar los siguientes comandos para migrar la base de datos. (mysql)
 
